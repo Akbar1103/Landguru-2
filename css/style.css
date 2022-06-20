@@ -193,7 +193,7 @@ select {
 }
 
 .advantages_content {
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
     padding-top: 180px;
 }
@@ -221,7 +221,7 @@ select {
     margin-top: 60px;
 }
 
-/* quality feature sectiion */
+/* quality feature section */
 .quality_features_header {
     margin-bottom: 70px;
 }
@@ -298,6 +298,7 @@ select {
     padding: 13px 31px 13px 31px;
     border-radius: 50px;
     border: none;
+    border: 2px solid transparent;
     color: #fff;
     background: #EA3A60;
     transition: 0.3s;
@@ -311,7 +312,7 @@ select {
 .core_features_content button:hover {
     background: #fff;
     color: #EA3A60;
-    border: 1px solid #EA3A60;
+    border-color: #EA3A60;
 }
 
 /* whats the function pink section before footer */
@@ -443,6 +444,7 @@ select {
     width: 139px;
     margin-top: 5px;
     background: none;
+    transition: 0.3s;
 }
  
 .monthly_annual h2:hover {
@@ -551,9 +553,16 @@ select {
     padding: 13px 53px 13px 53px;
     border-radius: 50px;
     border: none;
-    color: #fff;
-    background: #EA3A60;
+    transition: 0.3s;
+    color: #EA3A60;
+    background: #fff;
+    border: 3px solid #EA3A60;
 }
+.price_card button:hover {
+    background: #EA3A60;
+    color: #fff;
+}
+
 
 .pricing_plan_cards {
     margin-top: 150px;
