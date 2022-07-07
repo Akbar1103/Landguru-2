@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,7 @@
     <title>Top Quality Digital Products To Explore</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./Script.js"></script>
 </head>
-<body>
     <body>
         <header>
             <div class="main">
@@ -44,7 +43,9 @@
                             managments
                             that supplies <br>
                             best design system guidelines ever.</p>
+                      <div class="header_content_button">
                         <button>Explore</button>
+                      </div>  
                         <div class="header_content_mockup">
                             <div class="shapes">
                                 <img src="./shapes/shape.png" alt="">
@@ -253,9 +254,18 @@
                 <div class="pricing_plan_header">
                     <h3>Pricing Plan</h3>
                     <h1>Choose your pricing policy</h1>
-                    <div class="monthly_annual">
+                    <!-- <div class="monthly_annual">
                         <h2>Monthly Plan</h2>
                         <h2>Annual Plan</h2>
+                    </div> -->
+                    <!-- tabs -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'Monthly')">Monthly Plan</button>
+                        <button class="tablinks" onclick="openCity(event, 'Annual')">Annual Plan</button>
+                    </div>
+                    <div id="Monthly" class="tabcontent">
+                    </div>
+                    <div id="Annual" class="tabcontent">
                     </div>
                 </div>
                 <div class="pricing_plan_cards">
@@ -431,8 +441,8 @@
                     <h3>Testimunial</h3>
                     <h1>Meet Client Satisfaction</h1>
                 </div>
-                <div class="testimunial_cards">
-                    <div class="testimunial_card">
+                <div class="testimunial_cards" >
+                    <div class="testimunial_card" id="c1">
                         <img src="./cards logo/.png" alt="">
                         <h3>Modern look & trending design</h3>
                         <p>Get working experience to work with this <br> amazing team & in future want to work <br>
@@ -446,7 +456,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimunial_card">
+                    <div class="testimunial_card" id="c2">
                         <img src="./cards logo/.png" alt="">
                         <h3>Design Quality & performance</h3>
                         <p>Get working experience to work with this <br> amazing team & in future want to work <br>
@@ -460,7 +470,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimunial_card">
+                    <div class="testimunial_card" id="c3">
                         <img src="./cards logo/.png" alt="">
                         <h3>Layout and organized layers</h3>
                         <p>Get working experience to work with this <br> amazing team & in future want to work <br>
@@ -474,19 +484,16 @@
                             </div>
                         </div>
                     </div>
+                  
                 </div>
-                <div class="slider_icons">
-                    <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M0.35008 7.23482L7.48499 0.315473C7.92034 -0.106574 8.62631 -0.106574 9.06166 0.315473C9.49711 0.738052 9.49711 1.42245 9.06166 1.8445L3.82987 6.91814H22.8851C23.5008 6.91814 24 7.40202 24 7.99934C24 8.59611 23.5008 9.08051 22.8851 9.08051H3.82987L9.06155 14.1542C9.49687 14.5757 9.49687 15.2606 9.06155 15.6827C8.84377 15.8934 8.55846 15.9988 8.27315 15.9988C7.98787 15.9988 7.70256 15.8934 7.48488 15.6827L0.35008 8.76331C-0.085376 8.34181 -0.085376 7.65686 0.35008 7.23482Z"
-                            fill="#BBC7D7" />
-                    </svg>
-                    <svg width="39" height="16" viewBox="0 0 39 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M38.6499 7.2349L31.5149 0.315559C31.0796 -0.106488 30.3735 -0.106488 29.9383 0.315559C29.5028 0.738138 29.5028 1.42254 29.9383 1.84458L35.1701 6.91823H1.11477C0.499168 6.91823 0 7.4021 0 7.99942C0 8.5962 0.499168 9.0806 1.11477 9.0806H35.1701L29.9384 14.1542C29.5029 14.5758 29.5029 15.2607 29.9384 15.6827C30.156 15.8935 30.4415 15.9989 30.7268 15.9989C31.0121 15.9989 31.2974 15.8935 31.515 15.6827L38.6499 8.7634C39.0853 8.3419 39.0853 7.65695 38.6499 7.2349Z"
-                            fill="#0F2137" />
-                    </svg>
-                </div>
+                <div class="slider_arrows">
+                    <div class="left_arrow" onclick="moveLeft()">
+                        <button>123</button>
+                    </div>
+                    <div class="right_arrow" onclick="moveRight()">
+                        <button>321</button>
+                    </div>
+                </div> 
             </div>
             <!-- our blog section -->
             <div class="our_blog">
@@ -576,6 +583,7 @@
                 <p>Copyright 2019 By Redq, Inc</p>
             </div>
         </div>
+        <script src="./Script.js"></script>
     </body>
 
 </html>
